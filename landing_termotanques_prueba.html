@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termotanques Solares - Contacto</title>
+  
+  <!-- Aquí pegá tu código de Google Tag Manager en la versión publicada -->
+  <!-- Ejemplo: -->
+  <!-- <script>(function(w,d,s,l,i)...</script> -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007B3A;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007B3A;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005F2A;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Consultanos por tu Termotanque Solar</h1>
+    <p>Completá el siguiente formulario y un asesor te contactará a la brevedad.</p>
+    
+    <form id="formulario-contacto">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <input type="tel" name="telefono" placeholder="Tu teléfono">
+      <textarea name="mensaje" placeholder="Contanos qué necesitás..." rows="4" required></textarea>
+      <button type="submit">Enviar consulta</button>
+    </form>
+  </div>
+
+  <script>
+    // Simulamos envío para pruebas sin backend
+    document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Consulta enviada (simulación)');
+    });
+  </script>
+</body>
+</html>
